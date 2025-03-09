@@ -1,0 +1,64 @@
+body {
+    margin: 0;
+    background-color: #1B244A;
+}
+
+@font-face {
+    font-family: "scoreboardFont";
+    src: local("scoreboardFont"), url("scoreboardFont.ttf");
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    background-color: #1B244A;
+    color: white;
+    text-align: center;
+}
+h3 {
+    margin: 40px 0 21px 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+}
+
+#scoreboard {
+    background-color: #080001;
+    font-family: "scoreboardFont";
+    color: #F94F6D;
+    font-size: 90px;
+    height: 120px;
+    width: 155px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 26px 0;
+    border-radius: 5px;
+    
+}
+
+.scoreButtons {
+    margin: 0 0 40px 0;
+    background-color: #1B244A;
+    width: 155px;
+    display: flex;
+    justify-content: center;
+}
+.scoreButtons button {
+    font-family: "scoreboardFont";
+    margin: 0 5px;
+    border: 2px solid #9AABD8;
+    color: #9AABD8;
+    background-color: #1B244A;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 18px;
+
+}
+
+.scoreButtons#reset {
+    margin: 0 auto;
+}
+.scoreButtons#reset button {
+    color: #F94F6D;
+}
