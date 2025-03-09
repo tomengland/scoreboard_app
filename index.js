@@ -3,12 +3,15 @@ let guestScore = 0
 let homeScoreLabel = document.getElementById("homeScore")
 let guestScoreLabel = document.getElementById("guestScore")
 function isMax() {
-        return homeScore >= 997 || guestScore >= 997
+  if (homeScore >= 997 || guestScore >= 997) {
+    reset()
+  }
 }
 function plusOne() {
   const clickedElement = event.target;
   const parentElement = clickedElement.parentNode;
-  if (parentElement.id == "home" && !isMax()) {
+  isMax()
+  if (parentElement.id == "home") {
         homeScore++
         homeScoreLabel.textContent = homeScore
 
@@ -21,7 +24,8 @@ function plusOne() {
 function plusTwo() {
     const clickedElement = event.target;
     const parentElement = clickedElement.parentNode;
-    if (parentElement.id == "home" && !isMax()) {
+    isMax()
+    if (parentElement.id == "home") {
             homeScore += 2
             homeScoreLabel.textContent = homeScore
 
@@ -35,7 +39,8 @@ function plusTwo() {
 function plusThree() {
     const clickedElement = event.target;
     const parentElement = clickedElement.parentNode;
-    if (parentElement.id == "home" && !isMax()) {
+    isMax()
+    if (parentElement.id == "home") {
             homeScore += 3
             homeScoreLabel.textContent = homeScore
 
